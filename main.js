@@ -51,6 +51,7 @@ function handleSubmit(e) {
     } else {
         state.wrongAnswers++
         mistakesAllowed.textContent = 2 - state.wrongAnswers
+        updateProblem()
         problemElement.classList.add("animate-wrong")
         setTimeout(() =>  problemElement.classList.remove("animate-wrong"), 451)
 
